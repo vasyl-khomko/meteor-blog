@@ -1,8 +1,8 @@
 Package.describe({
   summary: "A package that provides a blog at /blog",
   version: "0.7.1",
-  name: "ryw:blog",
-  git: "https://github.com/Differential/meteor-blog.git"
+  name: "vasyl:blog",
+  git: "https://github.com/vasyl-khomko/meteor-blog.git"
 });
 
 Package.onUse(function(api) {
@@ -19,7 +19,7 @@ Package.onUse(function(api) {
     'less',
     'underscore',
     'aslagle:reactive-table@0.5.5',
-    'lovetostrike:shareit@0.4.1',
+    'vasyl:shareit@0.4.1',
     'gfk:notifications@1.0.11'
   ], 'client');
 
@@ -125,7 +125,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use("ryw:blog", ['client', 'server']);
+  api.use("vasyl:blog", ['client', 'server']);
   api.use('tinytest', ['client', 'server']);
   api.use('test-helpers', ['client', 'server']);
   api.use('coffeescript', ['client', 'server']);
